@@ -9145,6 +9145,7 @@ and limitations under the License.
       "use strict";
       Object.defineProperty(e, "__esModule", { value: !0 });
       (e.default = function() {
+        return 0;
         goldlog.record("/tmapp.retention.farm", "CLK", "clk=calltm", "GET"),
           (window.location.href =
             "https://pages.tmall.com/wow/mit/act/newtmapp?type=web&key=" +
