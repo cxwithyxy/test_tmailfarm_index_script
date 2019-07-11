@@ -1,3 +1,15 @@
+function cxlog(a, b)
+{
+  if(b)
+  {
+    console.log(b, a);
+  }
+  else
+  {
+    console.log(a);
+  }
+  return a;
+}
 // {"framework" : "Rax"}
 define("index", function(t) {
   !(function(t) {
