@@ -9086,17 +9086,25 @@ and limitations under the License.
             y = void 0 === h || h,
             v = t.dataType,
             m = void 0 === v ? "jsonp" : v;
-          return lib.mtop
+            cxlog({
+              api: e,
+              v: u,
+              data: (0, o.default)({ asac: s }, f),
+              ecode: 1,
+              timeout: d,
+              dataType: m
+            }, "request shenme ???????")
+          return cxlog(lib.mtop, "lib.mtop")
             .request(
               (0, o.default)(
-                {
+                cxlog({
                   api: e,
                   v: u,
                   data: (0, o.default)({ asac: s }, f),
                   ecode: 1,
                   timeout: d,
                   dataType: m
-                },
+                },"request shenme"),
                 c
               )
             )
@@ -9105,7 +9113,7 @@ and limitations under the License.
                 return t;
               },
               function(t, e) {
-                console.log(t);
+                cxlog(t, "报错了????");
                 var n = t && t.ret;
                 if (
                   (n.join && (n = n.join(",")),
@@ -20649,6 +20657,7 @@ and limitations under the License.
       var s = "TBWeitaoFollowServiceJSBridgeV3";
       (e.default = {
         getVersion: function() {
+          cxlog(o, "ooo");
           if (o.isWeex) return !0;
           if (o.isWeb) {
             var t = void 0;
